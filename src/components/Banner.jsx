@@ -6,10 +6,10 @@ import { motion } from "framer-motion";
 const Banner = () => {
   return (
     <div className="min-h-[100vh] overflow-hidden">
-      <div className="max-w-7xl mx-auto px-6 pt-16">
-        <div className="grid grid-cols-2 md:grid-cols-2 gap-8 items-center">
+      <div className="md:max-w-7xl mx-auto px-6 pt-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           <motion.div
-            className="w-md"
+            className="md:w-md"
             initial={{ opacity: 0, x: -60 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
@@ -52,21 +52,21 @@ const Banner = () => {
             </motion.p>
 
             <motion.div
-              className="grid grid-cols-2 gap-4"
+              className="grid md:grid-cols-2 gap-4"
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 1 }}
             >
               <Link
-                to="/projects"
-                className="inline-block font-semibold bg-orange-700 text-center text-white px-6 py-3 rounded hover:bg-blue-500 transition duration-300"
+                to="/project"
+                className="inline-block font-semibold bg-orange-700 text-center text-white md:px-6 py-3 rounded hover:bg-blue-500 transition duration-300"
               >
                 View My Work
               </Link>
 
               <Link
-                to="/contact"
-                className="inline-block border-amber-300 font-semibold border text-center text-gray-800 px-6 py-3 rounded hover:bg-gray-400 transition duration-300"
+                to="/Contact"
+                className="inline-block border-amber-300 font-semibold border text-center text-gray-800 md:px-6 py-3 rounded hover:bg-gray-400 transition duration-300"
               >
                 Contact Me
               </Link>

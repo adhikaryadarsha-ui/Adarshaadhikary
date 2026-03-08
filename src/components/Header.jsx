@@ -9,9 +9,9 @@ const Header = () => {
   return (
     <div>
       <header className=" text-gray-950 shadow-md">
-        <div className="max-w-full mx-auto px-0 py-0 flex justify-between items-center bg-gray-50">
+        <div className="md:max-w-full mx-auto px-0 py-0 flex justify-between items-center bg-gray-50">
           {/* Logo */}
-          <div className="bg-orange-700 text-white px-16 py-4 font-semibold text-2xl clip-path-logo">
+          <div className="bg-orange-700 text-white px-10 md:px-16 py-4 font-semibold md:text-2xl clip-path-logo">
             Adarsha Adhikary
           </div>
 
@@ -42,24 +42,24 @@ const Header = () => {
           </nav>
 
           {/* Mobile Button */}
-          <button className="md:hidden text-2xl" onClick={() => setMenu(!menu)}>
+          <button className="md:hidden text-2xl me-5" onClick={() => setMenu(!menu)}>
             ☰
           </button>
         </div>
 
         {/* Mobile Menu */}
         {menu && (
-          <div className="md:hidden bg-gray-800  pb-4 space-y-3">
-            <Link to="/" className="block hover:text-indigo-400">
+          <div className="md:hidden bg-gray-800 px-10 pb-4 space-y-3">
+            <Link to="/" className="block hover:text-indigo-400 text-gray-50">
               Home
             </Link>
-            <Link to="/about" className="block hover:text-indigo-400">
+            <Link to="/about" className="block hover:text-indigo-400 text-gray-50">
               About
             </Link>
-            <Link to="/projects" className="block hover:text-indigo-400">
+            <Link to="/projects" className="block hover:text-indigo-400 text-gray-50">
               Projects
             </Link>
-            <Link to="/contact" className="block hover:text-indigo-400">
+            <Link to="/contact" className="block hover:text-indigo-400 text-gray-50">
               Contact
             </Link>
           </div>
