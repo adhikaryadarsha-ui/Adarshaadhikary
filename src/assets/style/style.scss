@@ -1,0 +1,169 @@
+.clip-path-logo {
+    clip-path: polygon(0 0, 85% 0, 100% 100%, 0% 100%);
+}
+.hero-img-container
+{
+    position: relative;
+        width: 420px;
+        height: 420px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: -1;
+    .profile-img {
+          
+            position: relative;
+        }
+    
+        /* circle style */
+    
+        .circle {
+            position: absolute;
+            border-radius: 50%;
+            animation: float 6s ease-in-out infinite;
+        }
+    
+        .circle1 {
+            width: 520px;
+            height: 520px;
+            background: #e6eaf1;
+            opacity: 0.3;
+        }
+    
+        .circle2 {
+            width: 440px;
+            height: 440px;
+            background: #d8dee9;
+            opacity: 0.4;
+            animation-delay: 1s;
+        }
+    
+        .circle3 {
+            width: 360px;
+            height: 360px;
+            background: #cdd5e1;
+            animation-delay: 2s;
+            opacity: 0.5;
+        }
+    
+        /* animation */
+    
+        @keyframes float {
+            0% {
+                transform: scale(1);
+            }
+    
+            50% {
+                transform: scale(1.05);
+            }
+    
+            100% {
+                transform: scale(1);
+            }
+        }
+}
+
+
+
+footer{
+    /* animated gradient line */
+.animate-gradient {
+        background-size: 200% 200%;
+        animation: gradientMove 6s linear infinite;
+    }
+
+    @keyframes gradientMove {
+        0% {
+            background-position: 0%
+        }
+
+        100% {
+            background-position: 200%
+        }
+    }
+
+
+    /* wave animation */
+
+    .wave {
+        position: absolute;
+        top: -60px;
+        left: 0;
+        width: 100%;
+        height: 120px;
+        background: url("https://svgshare.com/i/12h8.svg");
+        background-size: cover;
+        animation: waveMove 8s linear infinite;
+    }
+
+    @keyframes waveMove {
+        0% {
+            background-position-x: 0
+        }
+
+        100% {
+            background-position-x: 1000px
+        }
+    }
+
+
+    /* glowing social icons */
+
+    .social-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        background: #1f2937;
+        font-size: 18px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    .social-icon:hover {
+        color: white;
+        background: #3b82f6;
+        box-shadow: 0 0 15px #3b82f6,
+            0 0 30px #3b82f6;
+        transform: translateY(-4px);
+    }
+
+
+    /* scroll to top button */
+
+    .scroll-top {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        background: #3b82f6;
+        color: white;
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 18px;
+        box-shadow: 0 0 15px rgba(59, 130, 246, 0.6);
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    .scroll-top:hover {
+        transform: scale(1.1);
+        background: #2563eb;
+    }
+}
+.rounded-edge {
+    aspect-ratio: 3/2;
+    clip-path: ellipse(150% 100% at 50% 0%);
+    background: #0001
+}
+.curved-edge2 {
+    --c: 70px;
+    aspect-ratio: 3/2;
+    mask: radial-gradient(60% var(--c) at top, #0000 calc(100% - 1px), #000);
+    background: #40C0CB;
+}
